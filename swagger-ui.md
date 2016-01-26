@@ -27,3 +27,7 @@ https://github.com/swagger-api/swagger-editor/blob/master/docs/cors.md
     } else {
       url = "http://x.x.x.x/nimbula.json";  # this is where need edit.
     }
+
+4. Reference
+------------
+https://www.ibm.com/developerworks/community/blogs/5e15a5a7-d4d6-4880-bd9c-e6819061a832/resource/Setting_up_Swagger_UI_for_a_development_environment.pdf?lang=en
