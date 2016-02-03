@@ -28,3 +28,14 @@ Refer to [Setting_up_Swagger_UI_for_a_development_environment](https://www.ibm.c
 
 refer to [Run Swagger Editor in a browser that ignores HTTP access control](https://github.com/swagger-api/swagger-editor/blob/master/docs/cors.md)
 
+3. issues with /recourse/{name} when {name} is like /basketball/tmac
+--------------------
+change code: ./dist/swagger-ui.js
+```
+Operation.prototype.encodePathParam = function (pathParam) {
+  //return encodeURIComponent(pathParam);
+  return pathParam.toString().split('/').map(encodeURIComponent).join('/');
+};
+
+```
+
